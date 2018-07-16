@@ -1,0 +1,1 @@
+package octopus.utils;import java.sql.Connection;public interface IOctopusOraConn extends Connection {	public boolean dumpTable(String tableName);	public boolean dumpTable(String tableName, String sep);	public boolean printQuery(String sql);	public boolean printQueryTS(String sql);	public boolean printQuery(String sql, String sep);	public int execSQL(String sql);}
